@@ -28,9 +28,14 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+a{
+	text-decoration: none;
+	color: black;
+}
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -48,15 +53,20 @@ table {
 }
 /** end reset css**/
 body {
-	max-width: 1140px;
+	max-width: 1440px;
 	margin:auto;
 	font-family: 'Work Sans' ;
 	font-size: 14px;
+	display: flex;
+	flex-direction: column;
 }
 header {
 	display: flex;
 	justify-content: space-between;
-	margin: 50px 0
+	margin: 50px 0;
+}
+html {
+	background: #fffef8;
 }
 section {
 	margin: 50px 0
@@ -86,17 +96,22 @@ h2{
 }
 nav ul {
 	display: flex;
+	justify-content: space-evenly;
 	align-items: center;
 	list-style-type: none;
+	gap: 30px;
 
 }
 nav li {
 	padding: 0 10px;
-	font-size: 1.2em;
+	font-size: 1.2em; 
 }
 
 li:hover {
 	color: #B1663C;
+}
+li img {
+	width: 20px;
 }
 #introduction {
 	display: flex;
@@ -162,31 +177,31 @@ li:hover {
 	width: 100%;
 
 }
-#contact {
+#contact, #login{
 	width: 50%;
 margin: auto;
 }
-#contact > * {
+#contact > *, #login > * {
 	text-align: center;
 
 }
-#contact h2{
+#contact h2, #login h2{
 	margin-bottom: 20px;
 }
-#contact form {
+#contact form, #login form {
 	text-align: left;
 	margin-top:30px;
 	display: flex;
 	flex-direction: column;
 }
 
-#contact input {
+#contact input, #login input {
 	height: 50px;
 	font-size: 1.2em;
 	border: none;
 	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
 }
-#contact label {
+#contact label, #login label {
 	margin: 2em 0 1em 0;
 }
 #contact textarea {
@@ -199,15 +214,33 @@ input[type="submit"]{
 	font-weight: 700;
 	color: white;
 	background-color: #1D6154;
-	margin : 2em auto ;
 	width: 180px;
+	margin : 2em auto ;
 	text-align: center;
 	border-radius: 60px ;
 }
-
+footer{
+	position: relative;
+	background: white;
+	height: 60px;
+	max-width: 1440px;
+	
+}
 footer nav ul {
 	display: flex;
 	justify-content: flex-end;
-	margin: 2em
+	margin: 2em;
 }
 
+#login {
+	width : 400px;
+	margin: auto;
+	margin-bottom: 250px;
+    margin-top: 150px;
+}
+#mdp-oublie {
+    font-size: 1.2em;
+	text-align: center;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
