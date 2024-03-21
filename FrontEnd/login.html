@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
-	<title>Sophie Bluel - Architecte d'intérieur</title>
+	<title>Sophie Bluel - Login</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,7 +10,7 @@
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="stylesheet" href="./assets/login.css">
-	<script defer src="./scripts/works.js "></script>
+	<script defer src="./scripts/login.js "></script>
 </head>
 <body  id="body-login">
 	<header>
@@ -26,13 +26,13 @@
 	</header>
 	<main id="main-login">
 		<section id="login">
+			<p class="login-placeholder" id="popup-error">L'e-mail ou le mot de passe est incorrect</p>
 			<h2>Log in</h2>
-			
 			<form action="#" method="post">
 				<label class="label-login" for="name">E-mail</label>
 				<input class="input-login" type="email" id="email" name="email" required>
 				<label class="label-login" for="password">Mot de passe</label>
-				<input class="input-login" type="password" name="password" id="password">
+				<input class="input-login" type="password" name="password" id="password" required>
 				<input id="connexion" type="submit" value="Se connecter">
 				<a id="mdp-oublie">Mot de passe oublié</a>
 			</form>

@@ -12,15 +12,15 @@ let gallery = document.querySelector(".gallery");
 
 
 async function fetchWorks() {
-        try {
-            let works = await fetch ('http://localhost:5678/api/works')       
-            worksData =  await works.json()
-            workDataArray = JSON.stringify(worksData)
-            return worksData;         
-        }
-        catch (error) {
-            console.error("Erreur lors du chargement", error);
-        }     
+    try {
+        let works = await fetch ('http://localhost:5678/api/works')       
+        worksData =  await works.json()
+        workDataArray = JSON.stringify(worksData)
+        return worksData;         
+    }
+    catch (error) {
+        console.error("Erreur lors du chargement", error);
+    }     
 }
 
 

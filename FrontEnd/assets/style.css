@@ -219,12 +219,11 @@ input[type="submit"]{
 	text-align: center;
 	border-radius: 60px ;
 }
-footer{
+footer {
 	position: relative;
 	background: white;
 	height: 60px;
-	max-width: 1440px;
-	
+	max-width: 1440px;	
 }
 footer nav ul {
 	display: flex;
@@ -236,7 +235,7 @@ footer nav ul {
 	width : 400px;
 	margin: auto;
 	margin-bottom: 250px;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 #mdp-oublie {
     font-size: 1.2em;
@@ -244,3 +243,19 @@ footer nav ul {
 	text-decoration: underline;
 	text-underline-offset: 3px;
 }
+.login-placeholder{
+	display:none;
+}
+.login-error {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: solid 0px red;
+	background-color: red;
+	border-radius: 20px;
+	color: white;
+	font-weight: 700;
+	font-size: 16px;
+	position: relative;
+	bottom: 100px;
+}
+
